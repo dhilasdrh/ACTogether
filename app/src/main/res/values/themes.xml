@@ -13,4 +13,78 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+     <style name="AppThemeNoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorAccent</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/opensans_regular</item>
+    </style>
+
+    <style name="CustomMaterialTheme" parent="Theme.MaterialComponents.Light">
+        <item name="colorPrimary">@color/colorPrimary</item>
+    </style>
+
+    <style name="CircleImage">
+        <item name="shapeAppearanceOverlay">@style/CircleImageAppearance</item>
+    </style>
+
+    <style name="CircleImageAppearance" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerSize">50%</item>
+        <item name="cornerFamily">rounded</item>
+    </style>
+
+    <style name="TextDefault">
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:textSize">@dimen/text_regular</item>
+        <item name="android:textColor">@color/dark_gray</item>
+    </style>
+
+    <style name="TextDefault.Bold">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextTitle" parent="TextDefault.Bold">
+        <item name="android:textSize">@dimen/text_large</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="TextTitle2" parent="TextDefault.Bold">
+        <item name="android:textSize">@dimen/text_medium</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="TextCaption" parent="TextDefault">
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">@dimen/text_small</item>
+    </style>
+
+    <style name="TextSubtitle" parent="TextDefault">
+        <item name="android:textSize">@dimen/text_regular</item>
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:fontFamily">@font/opensans_regular</item>
+    </style>
+
+    <style name="ButtonPrimary">
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@drawable/round_button_primary</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+
+    <style name="ButtonOutlined" parent="ButtonPrimary">
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="backgroundTint">@color/white</item>
+        <item name="rippleColor">@color/light_gray</item>
+        <item name="strokeColor">@color/light_gray</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+
 </resources>
