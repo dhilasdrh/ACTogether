@@ -47,6 +47,7 @@
     <string name="resend_email">Resend Email</string>
     <string name="title_community">Community</string>
     <string name="my_post">My Post</string>
+    <string name="title_donate">Donate</string>
 
     <string-array name="data_name">
         <item>Ahmad Dahlan</item>

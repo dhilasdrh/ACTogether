@@ -11,9 +11,6 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.dhilasdrh.zerowaste.R
-import com.dhilasdrh.zerowaste.ui.notifications.NotificationsFragment
-import com.dhilasdrh.zerowaste.ui.profile.ProfileFragment
-import org.jetbrains.anko.support.v4.startActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -28,7 +25,7 @@ class MainActivity : AppCompatActivity() {
         val appBarConfiguration = AppBarConfiguration(setOf(
             R.id.navigation_home,
             R.id.navigation_dashboard,
-            R.id.navigation_notifications,
+            R.id.navigation_donate,
             R.id.navigation_profile,
             R.id.navigation_community,
         ))

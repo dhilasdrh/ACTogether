@@ -18,10 +18,10 @@
         tools:layout="@layout/fragment_dashboard" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.dhilasdrh.zerowaste.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_donate"
+        android:name="com.dhilasdrh.zerowaste.ui.donate.DonateFragment"
+        android:label="@string/title_donate"
+        tools:layout="@layout/fragment_donate" />
 
     <fragment
         android:id="@+id/navigation_profile"
