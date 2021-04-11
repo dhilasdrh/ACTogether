@@ -17,13 +17,13 @@
         android:title="@string/title_notifications" />
 
     <item
-        android:id="@+id/navigation_community"
-        android:icon="@drawable/ic_outline_groups"
-        android:title="@string/title_community" />
-
-    <item
         android:id="@+id/navigation_profile"
         android:icon="@drawable/ic_outline_person"
         android:title="@string/title_profile" />
+
+    <item
+        android:id="@+id/navigation_community"
+        android:icon="@drawable/ic_outline_groups"
+        android:title="@string/title_community" />
 
 </menu>

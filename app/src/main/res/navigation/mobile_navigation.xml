@@ -24,15 +24,15 @@
         tools:layout="@layout/fragment_notifications" />
 
     <fragment
-        android:id="@+id/navigation_community"
-        android:name="com.dhilasdrh.zerowaste.ui.community.CommunityFragment"
-        android:label="@string/title_community"
-        tools:layout="@layout/fragment_community" />
-
-    <fragment
         android:id="@+id/navigation_profile"
         android:name="com.dhilasdrh.zerowaste.ui.profile.ProfileFragment"
         android:label="@string/title_profile"
         tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/navigation_community"
+        android:name="com.dhilasdrh.zerowaste.ui.community.CommunityFragment"
+        android:label="@string/title_community"
+        tools:layout="@layout/fragment_community" />
 
 </navigation>
