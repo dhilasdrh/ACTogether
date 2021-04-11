@@ -4,10 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.dhilasdrh.zerohunger.adapter.ArticleAdapter
@@ -30,9 +27,9 @@ class HomeFragment : Fragment() {
     private val listEvent = ArrayList<Event>()
 
     override fun onCreateView(
-            inflater: LayoutInflater,
-            container: ViewGroup?,
-            savedInstanceState: Bundle?
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
     ): View? {
      //   homeViewModel = ViewModelProvider(this).get(HomeViewModel::class.java)
 
@@ -42,7 +39,8 @@ class HomeFragment : Fragment() {
             startActivity<ArticleDetailsActivity>(
                 ARTICLE_TITLE to it.title,
                 ARTICLE_DESCRIPTION to it.description,
-                ARTICLE_PHOTO to it.photo)
+                ARTICLE_PHOTO to it.photo
+            )
         }
 
         val eventAdapter = EventAdapter(listEvent){
@@ -56,14 +54,16 @@ class HomeFragment : Fragment() {
         listEvent.addAll(getListEvent())
 
         binding.rvEvents.setHasFixedSize(true)
-        binding.rvEvents.layoutManager = LinearLayoutManager(context)
         binding.rvEvents.adapter = eventAdapter
-        binding.rvEvents.layoutManager = GridLayoutManager(context, 2)
+        binding.rvEvents.setLayoutManager(
+            LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
+        )
 
         binding.rvArticles.setHasFixedSize(true)
-        binding.rvArticles.layoutManager = LinearLayoutManager(context)
         binding.rvArticles.adapter = articleAdapter
-        binding.rvArticles.layoutManager = GridLayoutManager(context, 2)
+        binding.rvArticles.setLayoutManager(
+            LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
+        )
 
         return binding.root
     }
@@ -74,11 +74,11 @@ class HomeFragment : Fragment() {
         val dataDate = resources.getStringArray(R.array.event_date)
         val dataTime = resources.getStringArray(R.array.event_time)
         val dataLocation = resources.getStringArray(R.array.event_location)
-        val dataPhoto = resources.getStringArray(R.array.event_photo)
+        val dataPhoto = resources.getStringArray(R.array.data_photo)
 
         val listEvent = ArrayList<Event>()
         for (position in dataTitle.indices) {
-            val event = Event (
+            val event = Event(
                 dataTitle[position],
                 dataDescription[position],
                 dataPhoto[position],
@@ -98,7 +98,7 @@ class HomeFragment : Fragment() {
 
         val listArticle = ArrayList<Article>()
         for (position in dataTitle.indices) {
-            val article = Article (
+            val article = Article(
                 dataTitle[position],
                 dataDescription[position],
                 dataPhoto[position]

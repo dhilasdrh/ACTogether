@@ -22,8 +22,10 @@
         android:id="@+id/rv_events"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="horizontal"
         app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
-        app:spanCount="2"
+        app:spanCount="1"
+        app:reverseLayout="true"
         tools:listitem="@layout/item_event" />
 
     <TextView
@@ -37,8 +39,10 @@
         android:id="@+id/rv_articles"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="horizontal"
         app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
-        app:spanCount="2"
+        app:spanCount="1"
+        app:reverseLayout="true"
         tools:listitem="@layout/item_article" />
 
     </LinearLayout>
