@@ -12,10 +12,10 @@
         android:orientation="vertical">
 
     <TextView
-        style="@style/TextDefault.Bold"
+        style="@style/TextTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_margin="8dp"
         android:text="Events" />
 
     <androidx.recyclerview.widget.RecyclerView
@@ -27,10 +27,10 @@
         tools:listitem="@layout/item_event" />
 
     <TextView
-        style="@style/TextDefault.Bold"
+        style="@style/TextTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_margin="8dp"
         android:text="Article" />
 
     <androidx.recyclerview.widget.RecyclerView

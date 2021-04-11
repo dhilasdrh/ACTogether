@@ -88,7 +88,13 @@
         <item>Event 2</item>
         <item>Event 3</item>
         <item>Event 4</item>
-        <item>Event 5</item>
+    </string-array>
+
+    <string-array name="event_photo">
+        <item>@tools:sample/backgrounds/scenic</item>
+        <item>@tools:sample/backgrounds/scenic</item>
+        <item>@tools:sample/backgrounds/scenic</item>
+        <item>@tools:sample/backgrounds/scenic</item>
     </string-array>
 
     <string-array name="event_date">
@@ -96,7 +102,6 @@
         <item>April 4, 2021</item>
         <item>April 11, 2021</item>
         <item>April 18, 2021</item>
-        <item>April 25, 2021</item>
     </string-array>
 
     <string-array name="event_time">
@@ -104,14 +109,12 @@
         <item>13:00-15:00 WITA</item>
         <item>15:00-16:30 WITA</item>
         <item>16:00-17:00 WITA</item>
-        <item>19:00-20:00 WITA</item>
     </string-array>
 
     <string-array name="event_location">
         <item>Google Meet</item>
         <item>Google Meet</item>
         <item>YouTube Live</item>
-        <item>Google Meet</item>
         <item>Google Meet</item>
     </string-array>
 

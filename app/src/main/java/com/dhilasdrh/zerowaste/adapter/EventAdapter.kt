@@ -29,9 +29,9 @@ class EventAdapter(private var listEvent: ArrayList<Event>, private var listener
                     .load(items.photo)
                     .into(imgEvent)
                 tvEventName.text = items.title
-                tvEventLocation.text = items.location
                 tvDate.text = items.date
                 tvTime.text = items.time
+                tvLocation.text = items.location
 
                 itemView.setOnClickListener {
                     listener(items)

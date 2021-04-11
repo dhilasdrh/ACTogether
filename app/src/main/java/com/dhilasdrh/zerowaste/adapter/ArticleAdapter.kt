@@ -20,14 +20,13 @@ class ArticleAdapter(private var listArticle: ArrayList<Article>, private var li
         holder.bind(listArticle[position], listener)
     }
 
-    override fun getItemCount(): Int = listArticle.size
+    override fun getItemCount(): Int = 4
 
     inner class RecyclerViewHolder(private val binding: ItemArticleBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(items: Article, listener: (Article) -> Unit) {
             with(binding) {
                 Glide.with(itemView.context)
                         .load(items.photo)
-                        .apply(RequestOptions().override(350, 550))
                         .into(imgItemArticle)
                 tvArticleTitle.text = items.title
                 tvArticleDescription.text = items.description

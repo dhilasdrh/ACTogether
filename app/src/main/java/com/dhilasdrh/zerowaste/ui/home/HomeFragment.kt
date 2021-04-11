@@ -8,6 +8,7 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.dhilasdrh.zerohunger.adapter.ArticleAdapter
 import com.dhilasdrh.zerowaste.R
@@ -57,10 +58,12 @@ class HomeFragment : Fragment() {
         binding.rvEvents.setHasFixedSize(true)
         binding.rvEvents.layoutManager = LinearLayoutManager(context)
         binding.rvEvents.adapter = eventAdapter
+        binding.rvEvents.layoutManager = GridLayoutManager(context, 2)
 
         binding.rvArticles.setHasFixedSize(true)
         binding.rvArticles.layoutManager = LinearLayoutManager(context)
         binding.rvArticles.adapter = articleAdapter
+        binding.rvArticles.layoutManager = GridLayoutManager(context, 2)
 
         return binding.root
     }
@@ -71,7 +74,7 @@ class HomeFragment : Fragment() {
         val dataDate = resources.getStringArray(R.array.event_date)
         val dataTime = resources.getStringArray(R.array.event_time)
         val dataLocation = resources.getStringArray(R.array.event_location)
-        val dataPhoto = resources.getStringArray(R.array.data_photo)
+        val dataPhoto = resources.getStringArray(R.array.event_photo)
 
         val listEvent = ArrayList<Event>()
         for (position in dataTitle.indices) {
