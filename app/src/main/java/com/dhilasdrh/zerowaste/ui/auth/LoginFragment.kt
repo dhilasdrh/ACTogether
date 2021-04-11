@@ -13,19 +13,17 @@ import com.dhilasdrh.zerowaste.MyApplication
 import com.dhilasdrh.zerowaste.R
 import com.dhilasdrh.zerowaste.activity.MainActivity
 import com.dhilasdrh.zerowaste.databinding.FragmentLoginBinding
+import com.dhilasdrh.zerowaste.model.User
 import com.dhilasdrh.zerowaste.utils.Commons
 import com.dhilasdrh.zerowaste.utils.gone
 import com.dhilasdrh.zerowaste.utils.hideKeyboard
 import com.dhilasdrh.zerowaste.utils.visible
 import com.dhilasdrh.zerowaste.viewmodel.AuthViewModel
-import com.facebook.appevents.codeless.internal.ViewHierarchy.setOnClickListener
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
-import com.google.android.gms.common.SignInButton
 import com.google.android.gms.common.api.ApiException
-import com.google.firebase.FirebaseAppLifecycleListener
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException
 import com.google.firebase.auth.FirebaseAuthInvalidUserException
@@ -136,8 +134,8 @@ class LoginFragment : Fragment() {
                     if (task.isSuccessful) {
                         // Sign in success, update UI with the signed-in user's information
                         Log.d(TAG, "signInWithCredential:success")
-                        val user = auth.currentUser
-                      //  updateUI(user)
+
+                        val user = Firebase.auth.currentUser
                     } else {
                         // If sign in fails, display a message to the user.
                         Log.w(TAG, "signInWithCredential:failure", task.exception)

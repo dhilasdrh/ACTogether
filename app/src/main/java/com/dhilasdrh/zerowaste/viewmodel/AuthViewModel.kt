@@ -7,9 +7,9 @@ import com.dhilasdrh.zerowaste.MyApplication
 import com.dhilasdrh.zerowaste.model.User
 import com.dhilasdrh.zerowaste.repository.UserRepository
 import com.google.android.gms.tasks.Task
+import com.google.firebase.auth.AuthCredential
 import com.google.firebase.auth.AuthResult
 import com.google.firebase.auth.FirebaseUser
-import com.google.firebase.auth.GoogleAuthCredential
 
 class AuthViewModel : ViewModel() {
     private val TAG = "AUTH_VIEW_MODEL"
@@ -34,7 +34,7 @@ class AuthViewModel : ViewModel() {
         return auth.signInWithEmailAndPassword(email, password)
     }
 
-    fun googleLoginUser(credential: GoogleAuthCredential): Task<AuthResult> {
+    fun googleLoginUser(credential: AuthCredential): Task<AuthResult> {
         return auth.signInWithCredential(credential)
     }
 

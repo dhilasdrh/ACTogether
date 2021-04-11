@@ -12,7 +12,7 @@ data class User(
     var email: String? = null,
     var phoneNumber: String? = null,
     var photoUrl: String? = null,
-    var role: Int = 1,
+    var role: String = "1",
     var createdAt: String = Commons.getCurrentDateTime(),
     var updatedAt: String = Commons.getCurrentDateTime()
 ): Parcelable {

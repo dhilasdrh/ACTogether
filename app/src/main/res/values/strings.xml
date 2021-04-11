@@ -120,4 +120,60 @@
         <item>Google Meet</item>
     </string-array>
 
+    <string-array name="post_name">
+        <item>Nur Fadhilah</item>
+        <item>Nurul Azizah</item>
+        <item>Nurhidayah</item>
+        <item>Dian Pratiwi</item>
+    </string-array>
+
+    <string-array name="post_image_user">
+        <item>https://cdn.icon-icons.com/icons2/1378/PNG/512/avatardefault_92824.png</item>
+        <item>https://cdn.icon-icons.com/icons2/1378/PNG/512/avatardefault_92824.png</item>
+        <item>https://cdn.icon-icons.com/icons2/1378/PNG/512/avatardefault_92824.png</item>
+        <item>https://cdn.icon-icons.com/icons2/1378/PNG/512/avatardefault_92824.png</item>
+    </string-array>
+
+    <string-array name="post_date">
+        <item>1 day ago</item>
+        <item>2 days ago</item>
+        <item>3 days ago</item>
+        <item>4 days ago</item>
+    </string-array>
+
+    <string-array name="post_activity">
+        <item>Composting</item>
+        <item>Clean Plate</item>
+        <item>Buy from Local Farmer</item>
+        <item>Buy in Bulk</item>
+    </string-array>
+
+    <integer-array name="post_activity_icon">
+        <item>@drawable/ic_baseline_compost</item>
+        <item>@drawable/ic_dinner_plate</item>
+        <item>@drawable/ic_vegetable_basket</item>
+        <item>@drawable/ic_groceries</item>
+    </integer-array>
+
+    <string-array name="activity_icon">
+        <item>https://i.pinimg.com/originals/b0/8c/56/b08c564353f0a31679bc4fcab6f2f0b2.png</item>
+        <item>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVN3e_ePhAcele27neE5jSejrPVnradB4O4IMIKkQuZNHipk4H1pzkYnquFFanGU0tJq4&amp;usqp=CAU</item>
+        <item>https://images.assetsdelivery.com/compings_v2/sokolfly/sokolfly1906/sokolfly190600066.jpg</item>
+        <item>https://cdn.iconscout.com/icon/free/png-256/groceries-1692153-1439862.png</item>
+    </string-array>
+
+    <string-array name="post_image_post">
+        <item>https://pbs.twimg.com/media/EOmmjtWU4AAl2bp?format=jpg</item>
+        <item>https://pbs.twimg.com/media/DUljR_LUMAAj3wC?format=jpg</item>
+        <item>https://pbs.twimg.com/media/EyftIeXW8AM-G93?format=jpg</item>
+        <item>https://pbs.twimg.com/media/Dj3CGL9UwAATrTM?format=jpg</item>
+    </string-array>
+
+    <string-array name="post_caption">
+        <item>I just started composting and I\'m honestly so happy because I\'m way more conscious about tracking and reducing my waste!</item>
+        <item>I finished my meal without leave any leftovers on my plate today!! Great message: use your resources, take what you need, but do not waste them. </item>
+        <item>Buy plant-based whole foods from local farmers; heal yourself and the Earth!</item>
+        <item>zero-waste does not have to be expensive!!! buying from the bulk bins cost me $8 for items that would\'ve been ~$12. Save money and the earth! wash and reuse any glass/plastic container you have! it doesn\'t have to look pretty! every little bit helps!!!</item>
+    </string-array>
+
 </resources>
