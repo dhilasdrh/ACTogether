@@ -8,45 +8,43 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.bumptech.glide.Glide
-import com.dhilasdrh.zerowaste.LoginActivity
+import com.dhilasdrh.zerowaste.MyApplication
+import com.dhilasdrh.zerowaste.activity.LoginActivity
 import com.dhilasdrh.zerowaste.R
+import com.dhilasdrh.zerowaste.activity.AuthActivity
 import com.dhilasdrh.zerowaste.databinding.FragmentProfileBinding
+import com.dhilasdrh.zerowaste.viewmodel.AuthViewModel
 import com.firebase.ui.auth.AuthUI
 
 class ProfileFragment : Fragment() {
-
+    private lateinit var authViewModel: AuthViewModel
     private lateinit var profileViewModel: ProfileViewModel
     private lateinit var binding: FragmentProfileBinding
 
-    override fun onCreateView( inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         profileViewModel = ViewModelProvider(this).get(ProfileViewModel::class.java)
+        authViewModel = ViewModelProvider(this).get(AuthViewModel::class.java)
         binding = FragmentProfileBinding.inflate(inflater, container, false)
 
-        profileViewModel.displayName.observe(viewLifecycleOwner, {
-            binding.tvFullname.text = it
-        })
-        profileViewModel.email.observe(viewLifecycleOwner, {
-            binding.tvEmail.text = it
-        })
-        profileViewModel.photoUrl.observe(viewLifecycleOwner, {
-            if (it != null){
-                Glide.with(this).load(it).into(binding.imgProfile)
-            } else {
-                Glide.with(this).load(R.mipmap.ic_launcher_round).into(binding.imgProfile)
-            }
-        })
+        return binding.root
+    }
 
-        //sign-out
-        binding.btnSignOut.setOnClickListener {
-            context?.let { it1 ->
-                AuthUI.getInstance()
-                    .signOut(it1)
-                    .addOnCompleteListener {
-                        startActivity(Intent(context, LoginActivity::class.java))
-                    }
-            }
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        val user = MyApplication.getPreferencesManager().getUserInfo()
+        binding.tvFullname.text = user.name
+        binding.tvEmail.text = user.email
+
+        if (user.photoUrl != "") {
+            Glide.with(this).load(user.photoUrl).into(binding.imgProfile)
+        } else {
+            Glide.with(this).load(R.mipmap.ic_launcher_round).into(binding.imgProfile)
         }
 
-        return binding.root
+        binding.btnSignOut.setOnClickListener {
+            authViewModel.logOutUser()
+            startActivity(Intent(context, LoginActivity::class.java))
+            activity?.finish()
+        }
     }
 }

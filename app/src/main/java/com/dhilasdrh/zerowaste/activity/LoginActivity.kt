@@ -1,10 +1,11 @@
-package com.dhilasdrh.zerowaste
+package com.dhilasdrh.zerowaste.activity
 
 import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import com.dhilasdrh.zerowaste.R
 import com.firebase.ui.auth.AuthUI
 import com.firebase.ui.auth.ErrorCodes
 import com.firebase.ui.auth.IdpResponse
