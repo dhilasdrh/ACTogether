@@ -45,6 +45,7 @@
     <string name="message_password_length">Password must be at least 6 characters.</string>
     <string name="message_password_confirm_incorrect">Password doesn\'t match.</string>
     <string name="resend_email">Resend Email</string>
+    <string name="title_community">Community</string>
 
     <string-array name="data_name">
         <item>Ahmad Dahlan</item>
