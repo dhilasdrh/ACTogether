@@ -13,6 +13,7 @@ import com.dhilasdrh.zerowaste.activity.ArticleDetailsActivity
 import com.dhilasdrh.zerowaste.activity.ArticleDetailsActivity.Companion.ARTICLE_DESCRIPTION
 import com.dhilasdrh.zerowaste.activity.ArticleDetailsActivity.Companion.ARTICLE_PHOTO
 import com.dhilasdrh.zerowaste.activity.ArticleDetailsActivity.Companion.ARTICLE_TITLE
+import com.dhilasdrh.zerowaste.activity.InventoryActivity
 import com.dhilasdrh.zerowaste.adapter.EventAdapter
 import com.dhilasdrh.zerowaste.databinding.FragmentHomeBinding
 import com.dhilasdrh.zerowaste.model.Article
@@ -65,6 +66,21 @@ class HomeFragment : Fragment() {
             LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
         )
 
+        binding.cvFoodInventory.setOnClickListener {
+            startActivity<InventoryActivity>()
+        }
+
+        binding.cvMealPlanner.setOnClickListener {
+
+        }
+
+        binding.cvMealShoppingPlanner.setOnClickListener {
+
+        }
+
+        binding.cvRecipe.setOnClickListener {
+
+        }
         return binding.root
     }
 

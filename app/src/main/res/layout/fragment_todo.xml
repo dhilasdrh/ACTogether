@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:theme="@style/CustomMaterialTheme">
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/InputOutline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/title">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/InputOutline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/quantity">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_quantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLines="1" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/InputOutline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/due_date">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_due_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="date"
+            android:longClickable="false" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Category">
+
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+            android:id="@+id/filled_exposed_dropdown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/InputOutline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:hint="@string/time">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="date"
+            android:text="-"
+            android:longClickable="false" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/InputOutline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/time">
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/input_remind_me"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/reminder_text"
+            android:textColor="@color/dark_gray"
+            android:checked="true"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/InputOutline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/remind_time">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_remind_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="text"
+            android:longClickable="false" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Image"/>
+
+    <ImageView
+        android:id="@+id/img_myfood"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="8dp"
+        android:layout_gravity="center"
+        android:src="@drawable/img_placeholder"/>
+
+</LinearLayout>

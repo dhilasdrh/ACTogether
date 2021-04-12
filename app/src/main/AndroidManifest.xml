@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.dhilasdrh.zerowaste">
 
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
     <application
         android:name=".MyApplication"
         android:allowBackup="true"
@@ -10,18 +13,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ZeroWaste">
-        <activity android:name=".activity.DonateCompostableActivity"
-            android:label="Donate Compostable Waste"/>
-        <activity android:name=".activity.DonateItemsActivity"
-            android:label="Donate Item"/>
-        <activity android:name=".activity.DonateRecyclableActivity"
-            android:label="Donate Recycleable Waste"/>
-        <activity android:name=".activity.DonateFoodActivity"
-            android:label="Donate Food"/>
-        <activity android:name=".activity.DonateMoneyActivity"
-            android:label="Donate Money"/>/>
-        <activity android:name=".activity.ProfileActivity"
-            android:label="Account"/>/>
+
+        <activity android:name=".activity.InventoryActivity"></activity>
+        <activity
+            android:name=".activity.DonateCompostableActivity"
+            android:label="Donate Compostable Waste" />
+        <activity
+            android:name=".activity.DonateItemsActivity"
+            android:label="Donate Item" />
+        <activity
+            android:name=".activity.DonateRecyclableActivity"
+            android:label="Donate Recycleable Waste" />
+        <activity
+            android:name=".activity.DonateFoodActivity"
+            android:label="Donate Food" />
+        <activity
+            android:name=".activity.DonateMoneyActivity"
+            android:label="Donate Money" />
+        <activity
+            android:name=".activity.ProfileActivity"
+            android:label="Account" />
         <activity android:name=".activity.ArticleDetailsActivity" />
         <activity android:name=".activity.AuthActivity" />
         <activity android:name=".activity.SplashActivity" />
@@ -35,6 +46,11 @@
         <activity
             android:name=".activity.MainActivity"
             android:label="@string/app_name" />
+
+        <receiver
+            android:name=".util.AlarmReceiver"
+            android:enabled="true"
+            android:exported="true" />
     </application>
 
 </manifest>
