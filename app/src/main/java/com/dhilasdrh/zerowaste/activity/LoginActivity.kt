@@ -40,7 +40,7 @@ class LoginActivity : AppCompatActivity() {
                     )
                 )
                 .setIsSmartLockEnabled(false)
-                .setLogo(R.mipmap.ic_launcher_round)
+                .setLogo(R.drawable.actogether_text_icon)
                 .build(), RC_SIGN_IN
         )
     }

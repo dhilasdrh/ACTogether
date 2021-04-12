@@ -69,6 +69,7 @@
         <item>Lorem ipsum</item>
         <item>Lorem ipsum</item>
     </string-array>
+
     <string-array name="data_description">
         <item>Lorem ipsum dolor sit amet.</item>
         <item>Lorem ipsum dolor sit amet.</item>
@@ -77,11 +78,11 @@
     </string-array>
 
     <string-array name="data_photo">
-        <item>https://thumbs.dreamstime.com/b/multiracial-human-characters-picking-up-litter-beach-coastal-cleanup-volunteers-collecting-trash-bags-recycle-145554237.jpg</item>
-        <item>https://thumbs.dreamstime.com/b/beach-cleaning-students-people-flat-vector-illustration-young-plastic-garbage-waterfront-volunteering-environment-154081675.jpg</item>
-        <item>https://thumbs.dreamstime.com/b/family-clean-beach-people-put-away-garbage-trash-rubbish-care-environment-kids-parents-volunteering-vector-146821453.jpg</item>
-        <item>https://img.freepik.com/free-vector/beach-with-garbage-people-clean-environment-illustration-volunteer-character-pick-up-trash-from-nature-ecology-cartoon-man-woman-cleaning-ocean-plastic-waste-pollution_109722-2092.jpg</item>
-         </string-array>
+        <item>https://alvawater.co.id/wp-content/uploads/2020/08/Bagaimana-Memulai-Menerapkan-Zero-Waste-di-Rumah.jpg</item>
+        <item>https://i0.wp.com/blog.netray.id/wp-content/uploads/2020/02/5d947352d1fb8669ab6b7234.jpg</item>
+        <item>https://storage.trubus.id/storage/posts/t20190713/big_8c30ab29e0bfdf816494bf37c39e49e54d70179a.jpg</item>
+        <item>https://eponline.com/-/media/ENV/eponline/Images/2007/11/recycling.jpg</item>
+    </string-array>
 
     <string-array name="event_name">
         <item>Event 1</item>
@@ -91,10 +92,10 @@
     </string-array>
 
     <string-array name="event_photo">
-        <item>@tools:sample/backgrounds/scenic</item>
-        <item>@tools:sample/backgrounds/scenic</item>
-        <item>@tools:sample/backgrounds/scenic</item>
-        <item>@tools:sample/backgrounds/scenic</item>
+        <item>https://thumbs.dreamstime.com/b/multiracial-human-characters-picking-up-litter-beach-coastal-cleanup-volunteers-collecting-trash-bags-recycle-145554237.jpg</item>
+        <item>https://thumbs.dreamstime.com/b/beach-cleaning-students-people-flat-vector-illustration-young-plastic-garbage-waterfront-volunteering-environment-154081675.jpg</item>
+        <item>https://thumbs.dreamstime.com/b/family-clean-beach-people-put-away-garbage-trash-rubbish-care-environment-kids-parents-volunteering-vector-146821453.jpg</item>
+        <item>https://img.freepik.com/free-vector/beach-with-garbage-people-clean-environment-illustration-volunteer-character-pick-up-trash-from-nature-ecology-cartoon-man-woman-cleaning-ocean-plastic-waste-pollution_109722-2092.jpg</item>
     </string-array>
 
     <string-array name="event_date">

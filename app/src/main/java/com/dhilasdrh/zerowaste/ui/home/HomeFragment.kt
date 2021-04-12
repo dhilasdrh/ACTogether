@@ -74,7 +74,7 @@ class HomeFragment : Fragment() {
         val dataDate = resources.getStringArray(R.array.event_date)
         val dataTime = resources.getStringArray(R.array.event_time)
         val dataLocation = resources.getStringArray(R.array.event_location)
-        val dataPhoto = resources.getStringArray(R.array.data_photo)
+        val dataPhoto = resources.getStringArray(R.array.event_photo)
 
         val listEvent = ArrayList<Event>()
         for (position in dataTitle.indices) {
