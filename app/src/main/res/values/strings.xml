@@ -212,4 +212,40 @@
         <item>https://image.freepik.com/free-vector/food-trash-set-rotten-fruits-vegetables-meat-fish-bread-organic-waste-isolated-shite-background-flat-illustration_74855-14373.jpg</item>
     </string-array>
 
+    <string-array name="product_name">
+        <item>Bread</item>
+        <item>Donuts</item>
+        <item>Cupcakes</item>
+        <item>Bread</item>
+        <item>Donuts</item>
+        <item>Cupcake</item>
+    </string-array>
+
+    <string-array name="product_photo">
+        <item>https://i1.wp.com/gatherforbread.com/wp-content/uploads/2015/08/Easiest-Yeast-Bread.jpg</item>
+        <item>https://www.biggerbolderbaking.com/wp-content/uploads/2020/11/Homemade-Dunkin-Donuts-WS-Thumb-scaled.jpg</item>
+        <item>https://hips.hearstapps.com/del.h-cdn.co/assets/18/07/1518475314-vanilla-cupcake-horizontal-.jpg</item>
+        <item>https://www.maangchi.com/wp-content/uploads/2021/03/pandemic-bread-scaled.jpg</item>
+        <item>https://images.eatsmarter.com/sites/default/files/styles/1600x1200/public/sugar-coated-donuts-628512.jpg</item>
+        <item>https://funcakes.com/content/uploads/2019/11/FunCakes-recept-fondant-cupcakes-website-1-960x720-c-default.jpg</item>
+    </string-array>
+
+    <string-array name="product_sold">
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>5</item>
+        <item>3</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="product_price">
+        <item>15.000</item>
+        <item>20.000</item>
+        <item>15.000</item>
+        <item>13.000</item>
+        <item>17.000</item>
+        <item>18.000</item>
+    </string-array>
+
 </resources>
