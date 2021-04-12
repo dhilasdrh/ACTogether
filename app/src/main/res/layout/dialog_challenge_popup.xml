@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextTitle"
+            android:textAlignment="center"
+            android:text="Cut your Food Waste"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/eat_no_waste"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:text="Your Action\'s Impact"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#234f1e"
+                android:layout_marginEnd="8dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="16dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:text="0.39 Kg"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:text="CO2 saved"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TextSubtitle"
+                android:text="An estimated 931 million tonnes of food, or 17% of total food available to consumers in 2019, went into the waste bins of households, retailers, restaurants and other food services, according to new UN research conducted to support global efforts to halve food waste by 2030. The weight roughly equals that of 23 million fully-loaded 40-tonne trucks — enough bumper-to-bumper to circle the Earth 7 times."/>
+
+            <TextView
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TextSubtitle"
+                android:text="On a global per capita-level, 121 kilograms of consumer-level food is wasted each year, with 74 kilograms of this happening in households. The report also includes regional and national per capita estimates. Food waste has substantial environmental, social and economic impacts. For example, at a time when climate action is still lagging, 8%-10% of global greenhouse gas emissions are associated with food that is not consumed, when losses before consumer level are taken into account."/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                style="@style/TextSubtitle"
+                android:text="Reducing food waste would cut greenhouse gas emissions, slow the destruction of nature through land conversion and pollution, enhance the availability of food and thus reduce hunger and save money at a time of global recession"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_marginEnd="16dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/light_gray"
+                android:textColor="@color/black"
+                android:text="@string/cancel"/>
+
+            <Button
+                android:id="@+id/btn_act"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/act" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
