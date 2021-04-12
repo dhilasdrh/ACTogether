@@ -1,4 +1,4 @@
-package com.dhilasdrh.zerowaste.ui.dashboard
+package com.dhilasdrh.zerowaste.ui.shop
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,20 +10,20 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.dhilasdrh.zerowaste.R
 
-class DashboardFragment : Fragment() {
+class ShopFragment : Fragment() {
 
-    private lateinit var dashboardViewModel: DashboardViewModel
+    private lateinit var shopViewModel: ShopViewModel
 
     override fun onCreateView(
             inflater: LayoutInflater,
             container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View? {
-        dashboardViewModel =
-                ViewModelProvider(this).get(DashboardViewModel::class.java)
+        shopViewModel =
+                ViewModelProvider(this).get(ShopViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_dashboard, container, false)
         val textView: TextView = root.findViewById(R.id.text_dashboard)
-        dashboardViewModel.text.observe(viewLifecycleOwner, Observer {
+        shopViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })
         return root

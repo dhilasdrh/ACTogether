@@ -113,4 +113,9 @@
         <item name="fontFamily">@font/poppins_regular</item>
     </style>
 
+    <style name="InputOutline" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/colorPrimary</item>
+        <item name="android:strokeColor">#fff</item>
+    </style>
+
 </resources>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="16dp"
+    tools:context=".activity.DonateFoodActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_marginBottom="32dp"
+            android:src="@drawable/illustration_donate_food"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/InputOutline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pick Up Location">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                style="@style/TextCaption"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/InputOutline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Food Item(s)">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_food_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                style="@style/TextCaption"
+                android:maxLines="1" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/InputOutline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                style="@style/TextCaption"
+                android:maxLines="5" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Meal Type">
+
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                android:id="@+id/dropdown_meal_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TextCaption"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/InputOutline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Prefered Time">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_prefered_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                style="@style/TextCaption"
+                android:focusableInTouchMode="false"
+                android:inputType="date"
+                android:longClickable="false" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/InputOutline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pick Up Date">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_pickup_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                style="@style/TextCaption"
+                android:focusableInTouchMode="false"
+                android:inputType="date"
+                android:longClickable="false" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/InputOutline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Quantity">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                style="@style/TextCaption"
+                android:longClickable="false" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/InputOutline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:hint="@string/time">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:inputType="date"
+                android:text="-"
+                android:longClickable="false" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/InputOutline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/time">
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/input_remind_me"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="I assure that food quality and hygiene has maintained"
+                android:textColor="@color/dark_gray"
+                style="@style/TextCaption"
+                android:checked="true"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextCaption"
+            android:text="Add Image"/>
+
+        <ImageView
+            android:id="@+id/img_myfood"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="8dp"
+            android:layout_gravity="center"
+            android:src="@drawable/img_placeholder"/>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_donate_now"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="Donate Now"/>
+
+
+    </LinearLayout>
+
+</ScrollView>

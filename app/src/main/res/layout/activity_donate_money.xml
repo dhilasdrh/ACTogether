@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="16dp"
+    tools:context=".activity.DonateMoneyActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_marginBottom="32dp"
+        android:src="@drawable/illustration_donate_money"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/InputOutline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Payment">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextCaption"
+            android:inputType="text"
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/InputOutline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Amount">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_quantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextCaption"
+            android:inputType="text"
+            android:maxLines="1" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/InputOutline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Messages">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextCaption"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:longClickable="false" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/InputOutline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:hint="@string/time">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="date"
+            android:text="-"
+            android:longClickable="false" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/InputOutline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/time">
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/input_remind_me"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/donate_monthly"
+            style="@style/TextCaption"
+            android:textColor="@color/dark_gray"
+            android:checked="true"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_donate_now"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="16dp"
+        android:text="Donate Now"/>
+
+</LinearLayout>

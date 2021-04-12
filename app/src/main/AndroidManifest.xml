@@ -10,10 +10,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ZeroWaste">
-        <activity android:name=".activity.ProfileActivity"></activity>
+        <activity android:name=".activity.DonateCompostableActivity"
+            android:label="Donate Compostable Waste"/>
+        <activity android:name=".activity.DonateItemsActivity"
+            android:label="Donate Item"/>
+        <activity android:name=".activity.DonateRecyclableActivity"
+            android:label="Donate Recycleable Waste"/>
+        <activity android:name=".activity.DonateFoodActivity"
+            android:label="Donate Food"/>
+        <activity android:name=".activity.DonateMoneyActivity"
+            android:label="Donate Money"/>/>
+        <activity android:name=".activity.ProfileActivity"
+            android:label="Account"/>/>
         <activity android:name=".activity.ArticleDetailsActivity" />
         <activity android:name=".activity.AuthActivity" />
-        <activity android:name=".activity.SplashActivity"></activity>
+        <activity android:name=".activity.SplashActivity" />
         <activity android:name=".activity.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

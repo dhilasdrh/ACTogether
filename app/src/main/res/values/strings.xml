@@ -48,6 +48,8 @@
     <string name="title_community">Community</string>
     <string name="my_post">My Post</string>
     <string name="title_donate">Donate</string>
+    <string name="time">Time</string>
+    <string name="donate_monthly">Donate Monthly</string>
 
     <string-array name="data_name">
         <item>Ahmad Dahlan</item>

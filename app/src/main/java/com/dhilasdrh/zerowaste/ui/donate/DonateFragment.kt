@@ -6,14 +6,18 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.dhilasdrh.zerowaste.R
+import com.dhilasdrh.zerowaste.activity.*
 import com.dhilasdrh.zerowaste.adapter.DonateListAdapter
+import com.dhilasdrh.zerowaste.databinding.ActivityArticleDetailsBinding
 import com.dhilasdrh.zerowaste.databinding.FragmentDonateBinding
 import com.dhilasdrh.zerowaste.model.DonateList
+import org.jetbrains.anko.support.v4.startActivity
 
 class DonateFragment : Fragment() {
 
@@ -31,22 +35,27 @@ class DonateFragment : Fragment() {
         binding = FragmentDonateBinding.inflate(layoutInflater, container, false)
 
         val donateListAdapter = DonateListAdapter(listDonation){
-           /* startActivity<DonationDetailsActivity>(
-                EXTRA_ITEM to it
-            )*/
+          val position = listDonation.indexOf(it)
+               if (position == 0){
+                   startActivity<DonateMoneyActivity>()
+               } else if (position == 1){
+                   startActivity<DonateFoodActivity>()
+               } else if (position == 2){
+                   startActivity<DonateItemsActivity>()
+               } else if (position == 3){
+                   startActivity<DonateRecyclableActivity>()
+               } else if (position == 4){
+                   startActivity<DonateCompostableActivity>()
+               }
         }
 
-        listDonation.addAll(getListDonation())
+        getListDonation()
 
         binding.rvDonate.setHasFixedSize(true)
         binding.rvDonate.adapter = donateListAdapter
         binding.rvDonate.layoutManager = LinearLayoutManager(context)
         //binding.rvDonate.layoutManager = GridLayoutManager(context, 2)
 
-        /*val textView: TextView = root.findViewById(R.id.text_notifications)
-        donateViewModel.text.observe(viewLifecycleOwner, Observer {
-            textView.text = it
-        })*/
         return binding.root
     }
 
@@ -55,15 +64,14 @@ class DonateFragment : Fragment() {
         val dataDescription = resources.getStringArray(R.array.donate_description)
         val dataPhoto = resources.getStringArray(R.array.donate_img)
 
-        val listDonate = ArrayList<DonateList>()
         for (position in dataTitle.indices) {
             val donation = DonateList(
                 dataTitle[position],
                 dataDescription[position],
                 dataPhoto[position]
             )
-            listDonate.add(donation)
+            listDonation.add(donation)
         }
-        return listDonate
+        return listDonation
     }
 }
