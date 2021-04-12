@@ -8,13 +8,10 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.dhilasdrh.zerohunger.adapter.ArticleAdapter
 import com.dhilasdrh.zerowaste.R
-import com.dhilasdrh.zerowaste.activity.ArticleDetailsActivity
+import com.dhilasdrh.zerowaste.activity.*
 import com.dhilasdrh.zerowaste.activity.ArticleDetailsActivity.Companion.ARTICLE_DESCRIPTION
 import com.dhilasdrh.zerowaste.activity.ArticleDetailsActivity.Companion.ARTICLE_PHOTO
 import com.dhilasdrh.zerowaste.activity.ArticleDetailsActivity.Companion.ARTICLE_TITLE
-import com.dhilasdrh.zerowaste.activity.InventoryActivity
-import com.dhilasdrh.zerowaste.activity.MealPlanningActivity
-import com.dhilasdrh.zerowaste.activity.ShoppingListActivity
 import com.dhilasdrh.zerowaste.adapter.EventAdapter
 import com.dhilasdrh.zerowaste.databinding.FragmentHomeBinding
 import com.dhilasdrh.zerowaste.model.Article
@@ -80,7 +77,7 @@ class HomeFragment : Fragment() {
         }
 
         binding.cvRecipe.setOnClickListener {
-            
+            startActivity<RecipeActivity>()
         }
         return binding.root
     }

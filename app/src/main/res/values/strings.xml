@@ -265,4 +265,40 @@
         <item>7 days</item>
     </string-array>
 
+    <string-array name="recipe_name">
+        <item>Quick chicken hummus bowl</item>
+        <item>Orzo and tomato soup</item>
+        <item>Chipotle chicken and slaw</item>
+        <item>Veggie yaki udon</item>
+        <item>Pork souvlaki</item>
+        <item>Curried cod</item>
+    </string-array>
+
+    <string-array name="recipe_desciption">
+        <item>Lorem ipsum dolor sit amet, consectetur adipiscing.</item>
+        <item>Lorem ipsum dolor sit amet, consectetur adipiscing.</item>
+        <item>Lorem ipsum dolor sit amet, consectetur adipiscing.</item>
+        <item>Lorem ipsum dolor sit amet, consectetur adipiscing.</item>
+        <item>Lorem ipsum dolor sit amet, consectetur adipiscing.</item>
+        <item>Lorem ipsum dolor sit amet, consectetur adipiscing.</item>
+    </string-array>
+
+    <string-array name="recipe_photo">
+        <item>https://images.immediate.co.uk/production/volatile/sites/30/2020/08/quick-chicken-and-hummus-bowl-3863168.jpg</item>
+        <item>https://images.immediate.co.uk/production/volatile/sites/30/2020/08/tomato-and-orzo-soup-47fe2e7.jpg</item>
+        <item>https://images.immediate.co.uk/production/volatile/sites/30/2020/08/hot-wings-and-slaw-1903ce0.jpg</item>
+        <item>https://images.immediate.co.uk/production/volatile/sites/30/2020/08/yaki-udon-19d4efb.jpg</item>
+        <item>https://images.immediate.co.uk/production/volatile/sites/30/2020/08/pork-souvlaki-1380e9d.jpg</item>
+        <item>https://images.immediate.co.uk/production/volatile/sites/30/2020/08/curried-cod-d8ee619.jpg</item>
+    </string-array>
+
+    <string-array name="recipe_desc2">
+        <item>10 minutes • Easy • Healthy</item>
+        <item>20 minutes • Easy • Healthy</item>
+        <item>20 minutes • Easy • Healthy</item>
+        <item>10 minutes • Easy • Healthy</item>
+        <item>10 minutes • Easy • Healthy</item>
+        <item>20 minutes • Easy • Healthy</item>
+    </string-array>
+
 </resources>

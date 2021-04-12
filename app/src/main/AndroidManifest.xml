@@ -13,9 +13,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ZeroWaste">
-        <activity android:name=".activity.ShoppingListActivity"></activity>
-        <activity android:name=".activity.MealPlanningActivity" />
-        <activity android:name=".activity.InventoryActivity" />
+        <activity android:name=".activity.RecipeActivity"
+            android:label="Recipe"/>
+        <activity android:name=".activity.ShoppingListActivity"
+            android:label="Shopping List"/>
+        <activity android:name=".activity.MealPlanningActivity"
+            android:label="Meal Planning"/>
+        <activity android:name=".activity.InventoryActivity"
+            android:label="Food Inventory"/>
         <activity
             android:name=".activity.DonateCompostableActivity"
             android:label="Donate Compostable Waste" />

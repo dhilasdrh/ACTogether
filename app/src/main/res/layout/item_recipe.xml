@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="8dp"
+    android:layout_marginBottom="12dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img_recipe"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="8dp"
+            style="@style/CircleImage"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/recipe1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_recipe_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quick chicken hummus bowl"
+                android:textColor="@color/dark_gray"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/tv_recipe_desc2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10 minutes • Easy • Healthy "
+                android:textColor="@color/gray"
+                android:layout_marginBottom="6dp"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/tv_recipe_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Make our healthy chicken and hummus salad bowl for a delicious budget lunch option. "
+                android:textColor="@color/gray"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
