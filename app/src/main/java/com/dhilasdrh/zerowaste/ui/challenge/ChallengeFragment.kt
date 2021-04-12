@@ -16,9 +16,9 @@ class ChallengeFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         binding = FragmentChallengeBinding.inflate(layoutInflater, container, false)
 
-        val viewPagerAdapter = ChallengePagerAdapter(this, childFragmentManager)
+      /*  val viewPagerAdapter = ChallengePagerAdapter(this, childFragmentManager)
         binding.viewPager.adapter = viewPagerAdapter
-        binding.tabs.setupWithViewPager(binding.viewPager)
+        binding.tabs.setupWithViewPager(binding.viewPager)*/
 
         return binding.root
     }
