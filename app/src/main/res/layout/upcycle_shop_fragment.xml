@@ -5,9 +5,10 @@
     android:layout_height="match_parent"
     tools:context=".ui.shop.upcycleshop.UpcycleShopFragment">
 
-    <TextView
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_upcycle_shop"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Hello" />
+        tools:listitem="@layout/item_product"/>
 
 </FrameLayout>

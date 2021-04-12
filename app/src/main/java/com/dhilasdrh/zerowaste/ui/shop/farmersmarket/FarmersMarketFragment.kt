@@ -1,4 +1,4 @@
-package com.dhilasdrh.zerowaste.ui.shop.zerowasteshop
+package com.dhilasdrh.zerowaste.ui.shop.farmersmarket
 
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
@@ -8,24 +8,24 @@ import android.view.View
 import android.view.ViewGroup
 import com.dhilasdrh.zerowaste.R
 
-class ZeroWasteShopFragment : Fragment() {
+class FarmersMarketFragment : Fragment() {
 
     companion object {
-        fun newInstance() = ZeroWasteShopFragment()
+        fun newInstance() = FarmersMarketFragment()
     }
 
-    private lateinit var viewModel: ZeroWasteShopViewModel
+    private lateinit var viewModel: FarmersMarketViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.zero_waste_shop_fragment, container, false)
+        return inflater.inflate(R.layout.farmers_market_fragment, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(ZeroWasteShopViewModel::class.java)
+        viewModel = ViewModelProvider(this).get(FarmersMarketViewModel::class.java)
         // TODO: Use the ViewModel
     }
 
