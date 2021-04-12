@@ -1,4 +1,4 @@
-package com.dhilasdrh.zerowaste.ui.profile
+package com.dhilasdrh.zerowaste.ui.challenge
 
 import android.net.Uri
 import androidx.lifecycle.LiveData
@@ -6,7 +6,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.google.firebase.auth.FirebaseAuth
 
-class ProfileViewModel : ViewModel(){
+class ChallengeViewModel : ViewModel(){
     private val user = FirebaseAuth.getInstance().currentUser
 
     private val _displayName = MutableLiveData<String>().apply {

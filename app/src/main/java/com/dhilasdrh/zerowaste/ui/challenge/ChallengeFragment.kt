@@ -1,4 +1,4 @@
-package com.dhilasdrh.zerowaste.ui.profile
+package com.dhilasdrh.zerowaste.ui.challenge
 
 import android.content.Intent
 import android.os.Bundle
@@ -11,18 +11,16 @@ import com.bumptech.glide.Glide
 import com.dhilasdrh.zerowaste.MyApplication
 import com.dhilasdrh.zerowaste.activity.LoginActivity
 import com.dhilasdrh.zerowaste.R
-import com.dhilasdrh.zerowaste.activity.AuthActivity
 import com.dhilasdrh.zerowaste.databinding.FragmentProfileBinding
 import com.dhilasdrh.zerowaste.viewmodel.AuthViewModel
-import com.firebase.ui.auth.AuthUI
 
-class ProfileFragment : Fragment() {
+class ChallengeFragment : Fragment() {
     private lateinit var authViewModel: AuthViewModel
-    private lateinit var profileViewModel: ProfileViewModel
+    private lateinit var challengeViewModel: ChallengeViewModel
     private lateinit var binding: FragmentProfileBinding
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        profileViewModel = ViewModelProvider(this).get(ProfileViewModel::class.java)
+        challengeViewModel = ViewModelProvider(this).get(ChallengeViewModel::class.java)
         authViewModel = ViewModelProvider(this).get(AuthViewModel::class.java)
         binding = FragmentProfileBinding.inflate(inflater, container, false)
 

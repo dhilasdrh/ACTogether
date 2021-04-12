@@ -4,16 +4,15 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import androidx.appcompat.app.AppCompatActivity
-import androidx.lifecycle.LifecycleRegistry
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.bumptech.glide.Glide
 import com.dhilasdrh.zerowaste.MyApplication
 import com.dhilasdrh.zerowaste.R
 import com.dhilasdrh.zerowaste.databinding.ActivityProfileBinding
-import com.dhilasdrh.zerowaste.ui.profile.ProfileViewModel
 import com.dhilasdrh.zerowaste.viewmodel.AuthViewModel
+import com.dhilasdrh.zerowaste.viewmodel.ProfileViewModel
 import com.firebase.ui.auth.AuthUI
+import com.google.firebase.auth.FirebaseAuth
 
 class ProfileActivity : AppCompatActivity() {
     private lateinit var authViewModel: AuthViewModel
@@ -37,19 +36,13 @@ class ProfileActivity : AppCompatActivity() {
     }
 
     private fun getUserData(){
-        profileViewModel.displayName.observe(this, {
-            binding.tvFullname.text = it
-        })
-        profileViewModel.email.observe(this, {
-            binding.tvEmail.text = it
-        })
-        profileViewModel.photoUrl.observe(this, {
-            if (it != null) {
-                Glide.with(this).load(it).into(binding.imgProfile)
-            } else {
-                Glide.with(this).load(R.mipmap.ic_launcher_round).into(binding.imgProfile)
-            }
-        })
+        val user = FirebaseAuth.getInstance().currentUser
+
+        if (user != null){
+            binding.tvFullname.text = user.displayName
+            binding.tvEmail.text = user.email
+            Glide.with(this).load(user.photoUrl).placeholder(R.drawable.avatardefault).into(binding.imgProfile)
+        }
 
         //sign-out
         binding.btnSignOut.setOnClickListener {
