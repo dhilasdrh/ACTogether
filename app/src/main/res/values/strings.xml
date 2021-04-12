@@ -53,12 +53,15 @@
     <string name="title_shop">Shop</string>
     <string name="title_challenge">Challenge</string>
     <string name="zero_waste_shop">Zero Waste Shop</string>
-    <string name="farmer_market">Farmer Market</string>
+    <string name="farmer_market">Farmers Market</string>
     <string name="secondhand_shop">Second hand</string>
     <string name="thrift_shop">Thrift Shop</string>
     <string name="food">Food</string>
     <string name="rescue_food">Rescue Food</string>
     <string name="upcycled">Upcycle Shop</string>
+    <string name="journey">Journey</string>
+    <string name="habits">Habits</string>
+    <string name="leaderboard">Leaderboard</string>
 
     <string-array name="data_name">
         <item>Ahmad Dahlan</item>
