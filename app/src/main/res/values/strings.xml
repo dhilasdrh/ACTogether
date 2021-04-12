@@ -177,4 +177,28 @@
         <item>zero-waste does not have to be expensive!!! buying from the bulk bins cost me $8 for items that would\'ve been ~$12. Save money and the earth! wash and reuse any glass/plastic container you have! it doesn\'t have to look pretty! every little bit helps!!!</item>
     </string-array>
 
+    <string-array name="donate_name">
+        <item>Money</item>
+        <item>Food</item>
+        <item>Unused Items</item>
+        <item>Recyclable Waste</item>
+        <item>Compostable Waste</item>
+    </string-array>
+
+    <string-array name="donate_description">
+        <item>Donate money for the needy</item>
+        <item>Donate excess food to feed the needy</item>
+        <item>Donate unused clothes, books, furniture, electronices, and others items</item>
+        <item>Donate recyclable waste such us plastics, paper, glass, metal, and e-waste</item>
+        <item>Donate food scrap or organic waste</item>
+    </string-array>
+
+    <string-array name="donate_img">
+        <item>https://www.creativefabrica.com/wp-content/uploads/2020/05/21/money-donation-people-illustration-Graphics-4173572-1-1-580x348.jpg</item>
+        <item>https://cdn3.vectorstock.com/i/1000x1000/36/62/food-donation-tiny-volunteer-characters-filling-vector-33133662.jpg</item>
+        <item>https://image.freepik.com/free-vector/volunteers-collecting-goods-charity-into-huge-donation-box-donating-coins-into-jar-donation-charity-donation-funds-gift-kind-concept_335657-615.jpg</item>
+        <item>https://i.pinimg.com/originals/b2/7e/84/b27e8461a5da6b3ec2c2173e21c42c83.jpg</item>
+        <item>https://image.freepik.com/free-vector/food-trash-set-rotten-fruits-vegetables-meat-fish-bread-organic-waste-isolated-shite-background-flat-illustration_74855-14373.jpg</item>
+    </string-array>
+
 </resources>
