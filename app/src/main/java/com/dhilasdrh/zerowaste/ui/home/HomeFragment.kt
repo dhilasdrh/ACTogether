@@ -5,7 +5,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.dhilasdrh.zerohunger.adapter.ArticleAdapter
 import com.dhilasdrh.zerowaste.R
@@ -14,6 +13,7 @@ import com.dhilasdrh.zerowaste.activity.ArticleDetailsActivity.Companion.ARTICLE
 import com.dhilasdrh.zerowaste.activity.ArticleDetailsActivity.Companion.ARTICLE_PHOTO
 import com.dhilasdrh.zerowaste.activity.ArticleDetailsActivity.Companion.ARTICLE_TITLE
 import com.dhilasdrh.zerowaste.activity.InventoryActivity
+import com.dhilasdrh.zerowaste.activity.MealPlanningActivity
 import com.dhilasdrh.zerowaste.adapter.EventAdapter
 import com.dhilasdrh.zerowaste.databinding.FragmentHomeBinding
 import com.dhilasdrh.zerowaste.model.Article
@@ -71,7 +71,7 @@ class HomeFragment : Fragment() {
         }
 
         binding.cvMealPlanner.setOnClickListener {
-
+            startActivity<MealPlanningActivity>()
         }
 
         binding.cvMealShoppingPlanner.setOnClickListener {
