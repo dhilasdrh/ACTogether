@@ -51,6 +51,7 @@
     <string name="time">Time</string>
     <string name="donate_monthly">Donate Monthly</string>
     <string name="title_shop">Shop</string>
+    <string name="title_challenge">Challenge</string>
 
     <string-array name="data_name">
         <item>Ahmad Dahlan</item>

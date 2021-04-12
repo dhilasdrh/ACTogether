@@ -24,10 +24,10 @@
         tools:layout="@layout/fragment_donate" />
 
     <fragment
-        android:id="@+id/navigation_profile"
+        android:id="@+id/navigation_challenge"
         android:name="com.dhilasdrh.zerowaste.ui.challenge.ChallengeFragment"
-        android:label="@string/title_profile"
-        tools:layout="@layout/fragment_profile" />
+        android:label="@string/title_challenge"
+        tools:layout="@layout/fragment_challenge" />
 
     <fragment
         android:id="@+id/navigation_community"

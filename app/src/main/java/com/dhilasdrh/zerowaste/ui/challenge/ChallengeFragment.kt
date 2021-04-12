@@ -7,42 +7,20 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.bumptech.glide.Glide
-import com.dhilasdrh.zerowaste.MyApplication
-import com.dhilasdrh.zerowaste.activity.LoginActivity
-import com.dhilasdrh.zerowaste.R
-import com.dhilasdrh.zerowaste.databinding.FragmentProfileBinding
-import com.dhilasdrh.zerowaste.viewmodel.AuthViewModel
+import com.dhilasdrh.zerowaste.databinding.FragmentChallengeBinding
 
 class ChallengeFragment : Fragment() {
-    private lateinit var authViewModel: AuthViewModel
     private lateinit var challengeViewModel: ChallengeViewModel
-    private lateinit var binding: FragmentProfileBinding
+    private lateinit var binding: FragmentChallengeBinding
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        challengeViewModel = ViewModelProvider(this).get(ChallengeViewModel::class.java)
-        authViewModel = ViewModelProvider(this).get(AuthViewModel::class.java)
-        binding = FragmentProfileBinding.inflate(inflater, container, false)
+        binding = FragmentChallengeBinding.inflate(inflater, container, false)
 
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val user = MyApplication.getPreferencesManager().getUserInfo()
-        binding.tvFullname.text = user.name
-        binding.tvEmail.text = user.email
-
-        if (user.photoUrl != "") {
-            Glide.with(this).load(user.photoUrl).into(binding.imgProfile)
-        } else {
-            Glide.with(this).load(R.mipmap.ic_launcher_round).into(binding.imgProfile)
-        }
-
-        binding.btnSignOut.setOnClickListener {
-            authViewModel.logOutUser()
-            startActivity(Intent(context, LoginActivity::class.java))
-            activity?.finish()
-        }
+        challengeViewModel = ViewModelProvider(this).get(ChallengeViewModel::class.java)
     }
 }

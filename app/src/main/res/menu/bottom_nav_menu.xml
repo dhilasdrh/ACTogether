@@ -17,9 +17,9 @@
         android:title="@string/title_donate" />
 
     <item
-        android:id="@+id/navigation_profile"
-        android:icon="@drawable/ic_outline_person"
-        android:title="@string/title_profile" />
+        android:id="@+id/navigation_challenge"
+        android:icon="@drawable/ic_baseline_outlined_flag"
+        android:title="@string/title_challenge" />
 
     <item
         android:id="@+id/navigation_community"
