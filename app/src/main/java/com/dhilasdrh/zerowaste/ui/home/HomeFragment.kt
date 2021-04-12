@@ -14,6 +14,7 @@ import com.dhilasdrh.zerowaste.activity.ArticleDetailsActivity.Companion.ARTICLE
 import com.dhilasdrh.zerowaste.activity.ArticleDetailsActivity.Companion.ARTICLE_TITLE
 import com.dhilasdrh.zerowaste.activity.InventoryActivity
 import com.dhilasdrh.zerowaste.activity.MealPlanningActivity
+import com.dhilasdrh.zerowaste.activity.ShoppingListActivity
 import com.dhilasdrh.zerowaste.adapter.EventAdapter
 import com.dhilasdrh.zerowaste.databinding.FragmentHomeBinding
 import com.dhilasdrh.zerowaste.model.Article
@@ -75,11 +76,11 @@ class HomeFragment : Fragment() {
         }
 
         binding.cvMealShoppingPlanner.setOnClickListener {
-
+            startActivity<ShoppingListActivity>()
         }
 
         binding.cvRecipe.setOnClickListener {
-
+            
         }
         return binding.root
     }
